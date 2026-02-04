@@ -1,0 +1,145 @@
+/* #region Base styles */
+body {
+  color: #111111;
+  background-color: #fafafa;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+/* #endregion */
+
+/* #region Common */
+.accent-text {
+}
+/* #endregion */
+
+/* #region Header */
+.header {
+}
+.nav {
+}
+.nav-menu {
+}
+.nav-menu-item {
+}
+.nav-menu-link {
+}
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+}
+/* #endregion */
+
+/* #region Socials */
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/* #endregion */
+
+/* #region Logo */
+.logo {
+}
+.logo-icon {
+}
+/* #endregion */
+
+/* #region Hero */
+.hero {
+}
+.hero-title {
+}
+.hero-link {
+}
+.hero-link-icon {
+}
+/* #endregion */
+
+/* #region Buttons */
+.btn {
+}
+.btn-accent {
+}
+.btn-primary {
+}
+.btn-secondary {
+}
+/* #endregion */
+
+/* #region Benefits */
+.benefits {
+  background-color: #1e1823;
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-caption {
+  color: #fff;
+}
+.benefits-desc {
+  color: rgba(255, 255, 255, 0.7);
+}
+/* #endregion */
+
+/* #region Ingredients */
+.ingredients {
+}
+.ingredients-title {
+}
+.ingredients-list {
+}
+.ingredients-item {
+}
+.ingredients-ill {
+}
+.ingredients-subtitle {
+}
+/* #endregion */
+
+/* #region Made */
+.made {
+}
+.made-title {
+}
+.made-img {
+}
+.made-caption {
+}
+.made-recipe {
+}
+.made-recipe-item {
+}
+/* #endregion */
+
+/* #region Products */
+
+/* #endregion */
+
+/* #region Footer */
+.footer {
+}
+.footer-slogan {
+}
+.footer-caption {
+}
+.footer-address {
+}
+.footer-contatcs {
+}
+.footer-contatcs-item {
+}
+.footer-contatcs-link {
+}
+.menu {
+}
+.menu-item {
+}
+.menu-link {
+}
+/* #endregion */
