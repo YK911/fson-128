@@ -14,24 +14,28 @@
       href="./images/favicon.svg"
       type="image/svg+xml"
     />
-
-    <!-- Critical CSS -->
-    <style>
-      a {
-        color: rgb(23, 85, 255);
-        font-size: 24px;
-      }
-    </style>
-
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External libs | Normalize CSS | -->
+    <!-- <link rel="stylesheet" href="./css/normalise.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Header section -->
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav">
         <a class="logo" href="./index.html">
-          Simply Chocolate
+          <i>Simply</i> Chocolate
           <img
             class="logo-icon"
             src="./images/icons/chocolate.svg"
@@ -135,7 +139,7 @@
 
       <!-- Benefits section -->
       <section class="benefits" id="benefits">
-        <h2 hidden>Simply chocolate benefits</h2>
+        <h2 class="visually-hidden">Simply chocolate benefits</h2>
 
         <ul class="benefits-list">
           <li class="benefits-item">
@@ -171,7 +175,7 @@
 
       <!-- Ingredients section -->
       <section class="ingredients">
-        <h2 class="ingredients-title">
+        <h2 class="ingredients-title section-title">
           It all adds up to one exceptional
           <span class="accent-text">taste</span> sensation
         </h2>
@@ -252,7 +256,7 @@
 
       <!-- Made section -->
       <section class="made" id="made">
-        <h2 class="made-title">
+        <h2 class="made-title section-title">
           How it’s <span class="accent-text">made</span>?
         </h2>
         <img
@@ -291,7 +295,9 @@
 
       <!-- Products section -->
       <section class="products">
-        <h2>Our <span>products</span></h2>
+        <h2 class="section-title">
+          Our <span class="accent-text">products</span>
+        </h2>
         <ul>
           <li>
             <img
@@ -386,7 +392,9 @@
 
       <!-- Bestsellers section -->
       <section>
-        <h2><span>Top</span> sellers</h2>
+        <h2 class="section-title">
+          <span class="accent-text">Top</span> sellers
+        </h2>
         <ul>
           <li>
             <img
@@ -420,7 +428,9 @@
 
       <!-- Reviews section -->
       <section id="reviews">
-        <h2><span>Chocolate</span> is loved</h2>
+        <h2 class="section-title">
+          <span class="accent-text">Chocolate</span> is loved
+        </h2>
         <ul>
           <li>
             <img
