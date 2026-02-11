@@ -1,0 +1,224 @@
+/* #region Base styles */
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #111111;
+  letter-spacing: -0.02em;
+  background-color: #fafafa;
+}
+
+/* Reset */
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+/* #endregion */
+
+/* #region Common */
+.visually-hidden,
+.read-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.accent-text {
+  color: #fd9222;
+}
+
+.container {
+  width: 1168px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+/* #endregion */
+
+/* #region Header */
+.header {
+}
+.nav {
+}
+.nav-menu {
+}
+.nav-menu-item {
+}
+.nav-menu-link {
+  font-weight: 500;
+  line-height: 1.14;
+}
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+  color: #fd9222;
+}
+/* #endregion */
+
+/* #region Socials */
+.socials {
+}
+.socials-item {
+}
+.socials-link {
+}
+.socials-icon {
+}
+/* #endregion */
+
+/* #region Logo */
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111;
+}
+.logo-icon {
+}
+/* #endregion */
+
+/* #region Hero */
+.hero {
+  background-color: rgba(17, 17, 17, 0.4);
+}
+.hero-title {
+  width: 484px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-link {
+  font-weight: 500;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.hero-link-icon {
+}
+/* #endregion */
+
+/* #region Buttons */
+.btn {
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+}
+.btn-accent {
+  background-color: #fd9222;
+}
+.btn-primary {
+}
+.btn-secondary {
+  font-size: 18px;
+  color: #111;
+}
+/* #endregion */
+
+/* #region Benefits */
+.benefits {
+  background-color: #1e1823;
+}
+.benefits-list {
+}
+.benefits-item {
+}
+.benefits-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: #fff;
+}
+.benefits-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* #endregion */
+
+/* #region Ingredients */
+.ingredients {
+}
+.ingredients-title {
+}
+.ingredients-list {
+}
+.ingredients-item {
+}
+.ingredients-ill {
+}
+.ingredients-subtitle {
+}
+/* #endregion */
+
+/* #region Made */
+.made {
+}
+.made-title {
+}
+.made-img {
+}
+.made-caption {
+}
+.made-recipe {
+}
+.made-recipe-item {
+}
+/* #endregion */
+
+/* #region Products */
+
+/* #endregion */
+
+/* #region Footer */
+.footer {
+}
+.footer-slogan {
+}
+.footer-caption {
+}
+.footer-address {
+}
+.footer-contatcs {
+}
+.footer-contatcs-item {
+}
+.footer-contatcs-link {
+}
+.menu {
+}
+.menu-item {
+}
+.menu-link {
+}
+/* #endregion */

@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+p {
+  margin: 0;
+}
+
+.text {
+  box-sizing: content-box;
+  width: 200px;
+  height: 160px;
+
+  padding: 20px;
+  border: 5px dashed tomato;
+}
+
+.section {
+  outline: 2px solid red;
+  outline-offset: -2px;
+  background-color: lightblue;
+}
+
+.text-2 {
+  box-sizing: border-box;
+  width: 200px;
+  height: 160px;
+
+  /* padding: 20px 40px 30px 10px; */
+  padding: 28px 23px;
+  /* padding: 8px; */
+
+  /* margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto; */
+
+  /* padding: 0 0 20px 0; */
+  /* padding-bottom: 20px; */
+  /* border-top: 5px dashed tomato;
+  border-right: 15px solid rebeccapurple;
+  border-bottom: 8px dotted lightblue; */
+
+  border: 5px dashed tomato;
+  /* border-top: none; */
+  /* border-radius: 10px 20px 30px 40px; */
+  border-radius: 10px 40px;
+}
+
+.section-top {
+  margin-bottom: 100px;
+}
+
+.section-bottom {
+  margin-top: 50px;
+}
