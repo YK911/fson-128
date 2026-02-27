@@ -662,12 +662,26 @@
               <a class="menu-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
+
+          <form class="footer-form" name="subscribeForm">
+            <label class="footer-form-label">
+              <input
+                class="footer-form-field"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+            </label>
+            <button class="btn btn-accent footer-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Close modal button">
           <svg class="modal-btn-icon" width="28" height="28">
@@ -678,43 +692,100 @@
           LEAVE A REVIEW ABOUT <span class="accent-text">OUR CHOCOLATE</span>
         </p>
 
-        <form
-          class="feedback-form"
-          name="feedback"
-          autocomplete="off"
-          novalidate
-        >
-          <div>
-            <label for="userName">Name</label>
+        <form class="feedback-form" name="feedback">
+          <div class="feedback-wrapper">
+            <label class="feedback-label" for="userName">Name</label>
+            <div class="feedback-field">
+              <input
+                class="feedback-input"
+                type="text"
+                id="userName"
+                name="userName"
+                required
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                title="Username must be two words separated by space"
+              />
+              <svg class="feedback-icon" width="24" height="24">
+                <use href="./images/icons.svg#user"></use>
+              </svg>
+              <svg class="error-icon" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feedback-wrapper">
+            <label class="feedback-label" for="userEmail">Email</label>
+            <div class="feedback-field">
+              <input
+                class="feedback-input"
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                required
+              />
+              <svg class="feedback-icon" width="24" height="24">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              <svg class="error-icon" width="24" height="24">
+                <use href="./images/icons.svg#error"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feedback-wrapper">
+            <label class="feedback-label" for="userPhone">Phone number</label>
+            <div class="feedback-field">
+              <input
+                class="feedback-input"
+                type="tel"
+                id="userPhone"
+                name="userPhone"
+              />
+              <svg class="feedback-icon" width="24" height="24">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="feedback-wrapper">
+            <label class="feedback-label" for="userComment">Comment</label>
+            <textarea
+              class="feedback-comment"
+              name="userComment"
+              id="userComment"
+              rows="4"
+              placeholder="Enter text"
+              minlength="20"
+              maxlength="1000"
+              required
+            ></textarea>
+            <span class="counter-face"> <span id="counter">0</span>/1000 </span>
+          </div>
+
+          <label class="feedback-agreement">
             <input
-              type="text"
-              id="userName"
-              name="userName"
-              placeholder="Jacob Mercer"
+              class="feedback-checkbox visually-hidden"
+              type="checkbox"
+              name="userAgreement"
+              id="userAgreement"
+              value="true"
+              checked
             />
-          </div>
-          <div>
-            <label for="userEmail">Email</label>
-            <input type="email" id="userEmail" placeholder="example@mail.com" />
-          </div>
-          <div>
-            <label for="userPassword">Password</label>
-            <input type="password" id="userPassword" name="userPassword" />
-          </div>
-          <div>
-            <label for="userAgreement">Agreement</label>
-            <input type="checkbox" id="userAgreement" name="userAgreement" />
-          </div>
-
-          <label>
-            Comment
-
-            <textarea name=""></textarea>
+            <span class="feedback-toggler">
+              <svg class="feedback-toggler-icon" width="10" height="10">
+                <use href="./images/icons.svg#check"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a class="feedback-link" href="#">Privacy Policy</a>
           </label>
 
-          <button class="feedback-form-btn" type="submit">Send</button>
+          <button class="btn btn-accent" type="submit">Send</button>
         </form>
       </div>
     </div>
+
+    <script type="module" src="./script/app.js"></script>
   </body>
 </html>
