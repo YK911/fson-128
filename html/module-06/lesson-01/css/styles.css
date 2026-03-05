@@ -1,3 +1,7 @@
+.hide {
+  display: none;
+}
+
 /* #region Base styles */
 body {
   font-family: "Montserrat", sans-serif;
@@ -61,34 +65,67 @@ img {
   overflow: hidden;
 }
 .section {
-  padding: 60px 0;
+  padding: 40px 0;
 }
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
 .section-title {
-  width: 412px;
-  margin: 0 auto 50px;
+  max-width: 283px;
+  margin: 0 auto 32px;
 
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .section-title {
+    max-width: 412px;
+    margin: 0 auto 50px;
+
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 .accent-text {
   color: #fd9222;
 }
 
 .container {
-  width: 1168px;
-  padding: 0 16px;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
 
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
-.animation {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  .container {
+    max-width: 1168px;
+    padding: 0 16px;
+  }
+}
+/* .animation {
   transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 /* #endregion */
 
 /* #region Header */
@@ -386,22 +423,53 @@ img {
 
 /* #region Ingredients */
 .ingredients {
-  padding-top: 120px;
+  padding-top: 80px;
 }
-.ingredients-title {
+@media only screen and (min-width: 768px) {
+  .ingredients {
+    padding-top: 100px;
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingredients {
+    padding-top: 120px;
+  }
 }
 .ingredients-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  flex-direction: column;
+  gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  .ingredients-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ingredients-list {
+    gap: 24px 32px;
+  }
 }
 .ingredients-item {
   position: relative;
-  width: calc((100% - 32px * 3) / 4);
 
-  padding: 28px 23px;
+  padding: 32px 28px 28px;
+
   border: 1px solid transparent;
   border-radius: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .ingredients-item {
+    width: calc((100% - 32px * 1) / 2);
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .ingredients-item {
+    width: calc((100% - 32px * 3) / 4);
+    padding: 28px 23px;
+  }
 }
 .ingredients-item:nth-child(2n) {
   border-color: #fd9222;
@@ -413,6 +481,11 @@ img {
 .ingredients-item:nth-child(4n + 3) {
   background-color: #1e1823;
   color: #fff;
+}
+@media only screen and (max-width: 767.98px) {
+  .ingredients-item:nth-last-child(-n + 3) {
+    display: none;
+  }
 }
 .ingredients-btn {
   position: absolute;
@@ -434,7 +507,12 @@ img {
   stroke: #ffffff;
 }
 .ingredients-ill {
-  margin-bottom: 36px;
+  margin: 0 auto 16px;
+}
+@media only screen and (min-width: 1024px) {
+  .ingredients-ill {
+    margin: 0 auto 36px;
+  }
 }
 .ingredients-subtitle {
   font-weight: 600;
@@ -499,18 +577,39 @@ img {
 /* #region Products */
 .products-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px 18px;
+  flex-direction: column;
+  gap: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .products-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .products-list {
+    gap: 24px 18px;
+  }
 }
 .products-item {
-  width: calc((100% - 18px * 3) / 4);
   padding: 32px 20px;
   text-align: center;
   background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
+@media only screen and (min-width: 768px) {
+  .products-item {
+    width: calc((100% - 32px * 1) / 2);
+  }
+}
+@media only screen and (min-width: 1168px) {
+  .products-item {
+    width: calc((100% - 18px * 3) / 4);
+  }
+}
 .products-ill {
+  margin: 0 auto;
   margin-bottom: 8px;
 }
 .products-caption {
