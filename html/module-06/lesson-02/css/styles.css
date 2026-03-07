@@ -1327,3 +1327,19 @@ img {
   background: #fd9222;
 }
 /* #endregion */
+
+.hero {
+  padding: 50px;
+
+  & .title {
+    font-size: 20px;
+  }
+}
+
+.reviews {
+  padding: 50px;
+
+  & .title {
+    font-size: 20px;
+  }
+}
